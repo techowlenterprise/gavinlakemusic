@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>One Music - Modern Music HTML5 Template</title>
+    <title>Gavin Lake Music | Acoustic Singer, Songwriter & Artist</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -35,56 +35,66 @@
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
-      <!-- Navbar Area -->
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Navbar Area -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-          <a href="/gavinlakemusic/index.html" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">Home</a>
-          <a href="#" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">About</a>
-          <a href="/gavinlakemusic/music.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Music</a>
-          <a href="/gavinlakemusic/blog.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">News</a>
-          <a href="/gavinlakemusic/poetry.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Poetry</a>
-          <a href="/gavinlakemusic/art.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Art</a>
-          <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Community</a>
-          <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Contact</a>
-          <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Bookings</a>
-        </div>
-        
-        <span style="font-size:40px;cursor:pointer; color: white; padding-left: 20px; display: block;" onclick="openNav()">&#9776;</span>
-        <!-- Nav brand -->
+            <a href="/gavinlakemusic/index.html" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">Home</a>
+            <a href="/gavinlakemusic/about.html" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">About</a>
+            <a href="/gavinlakemusic/music.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Music</a>
+            <!-- <a href="/gavinlakemusic/blog.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">News</a> -->
+            <a href="/gavinlakemusic/poetry.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Poetry</a>
+            <a href="/gavinlakemusic/art.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Art</a>
+            <!-- <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Community</a> -->
+            <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Contact</a>
+            <!-- <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Bookings</a> -->
+          </div>
+          
+          <span style="font-size:40px;cursor:pointer; color: white; padding-left: 20px; display: block;" onclick="openNav()">&#9776;</span>
+          <!-- Nav brand -->
 
-        
-  </header>
-  <!-- ##### Header Area End ##### -->
+    </header>
+    <!-- ##### Header Area End ##### -->
+    <style>
+      .poetry-nav {
+        background-color: white;
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
 
-    <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide d-flex align-items-center justify-content-center">
-                <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/hero-1-gav.jpeg);"></div>
-                <!-- Slide Content -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+    .poetry-nav a {
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: gray;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
 
-                            <div class="hero-slides-content text-center">
-                                <a href="index.html" class="nav-brand"><img style="padding-bottom: 20px; max-width: 300px; margin: 0 auto; opacity: 0.8;" src="img/core-img/logo.png" alt=""></a>
+    .poetry-nav a:hover {
+      color: #393030;
+      padding-left: 6px;
+    }
 
-                                <!-- <h6 data-animation="fadeInUp" data-delay="100ms">A Scheme Said to Break One's Fall is a Power to Undo</h6> -->
-                                <h2 data-animation="fadeInUp" data-delay="300ms"><span></span></h2>
-                                <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </style>
+  <div class="poetry-nav">
+  <a href="#book-everything">Everything</a>
+  <a href="#book-text">Text</a>
+</div>
 
-           
+   <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/landscape/gav-front-of-wall.jpeg);">
+        <div class="bradcumbContent">
+            <h2>Poetry</h2>
         </div>
     </section>
-    <!-- ##### Hero Area End ##### -->
+    <!-- ##### Breadcumb Area End ##### -->
 
     <style>
         .btn-link:hover {
@@ -93,576 +103,1287 @@
         .btn-link:focus {
             text-decoration: none;
         }
+        html {
+          scroll-behavior: smooth;
+        }
+
+        .card-header {
+          scroll-margin-top: 120px;
+        }
     </style>
+
+    <style>
+      .social-bar-right {
+        position: fixed;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      }
+
+      .social-bar-right a {
+        font-size: 24px;
+        margin: 8px 0;
+        transition: transform 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .social-bar-right a:hover {
+        transform: translateX(-6px);
+      }
+
+      /* Brand Colors */
+      .facebook { color: #1877F2; }
+      .twitter { color: #1DA1F2; }
+      .instagram { color: #C13584; }
+      .youtube { color: #FF0000; }
+      .soundcloud { color: #FF8800; }
+      .bandcamp { color: #629AA9; }
+      .threads { color: #000000; }
+    </style>
+
+<div class="social-bar-right">
+  <a href="https://www.facebook.com" target="_blank" class="facebook" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank" class="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com" target="_blank" class="instagram" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com" target="_blank" class="youtube" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+  <a href="https://soundcloud.com" target="_blank" class="soundcloud" aria-label="SoundCloud"><i class="fa fa-soundcloud"></i></a>
+  <a href="https://bandcamp.com" target="_blank" class="bandcamp" aria-label="Bandcamp"><i class="fa fa-bandcamp"></i></a>
+  <a href="https://www.threads.net" target="_blank" class="threads" aria-label="Threads"><i class="fa fa-threads"></i></a>
+</div>
+
+<style>
+.card-body {
+  max-height: calc(100vh - 180px); /* slightly smaller than viewport */
+  overflow-y: auto; /* allow scrolling inside the card */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Webkit browsers */
+.card-body::-webkit-scrollbar {
+  display: none;
+}
+
+.card-body p {
+  margin: 0;
+  padding: 10px;
+}
+</style>
+
     <!-- ##### Miscellaneous Area Start ##### -->
     <section class="miscellaneous-area section-padding-100-0">
 
+        <div class="container mb-100">
+          <div class="col-12">
+                <div id="book-everything" class="section-heading style-2">
+                    <h2>Excerpts from the book 'Everything'</h2>
+                </div>
+
+                <img src="img/poetry/book-everything/everything-book-two-women-artwork.jpeg" alt="">
+
+                
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0 text-center">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h3>Life Alone</h3>
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                          <p class="text-center">
+                              If you are on the way to being great you will be hated,<br><br>
+                              
+                              But when you are there they will call you the king of love,<br><br>
+                              
+                              When you are sad you will not find love,<br><br>
+                              
+                              And when you succeed they will tell you they always knew,<br><br>
+                              
+                              It’s dark as fuck,<br><br>
+                              
+                              If you are learning you will be hated or lied to,<br><br>
+                              
+                              Which is worse?<br><br>
+                              
+                              They sing when you’re winning.<br><br>
+                              
+                              They section you if you fall.<br><br>
+                              
+                              Nobody loves an artist.
+                              </p>
+
+                          </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0 text-center">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3>Lies</h3>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="text-center">
+                            It is desperate,<br><br>
+                            
+                            Everybody just wanting to be left alone with their vice,<br><br>
+                            
+                            We all want a bullet in our fucking heads,<br><br>
+                            
+                            Nice overtures are not enough anymore,<br><br>
+                            
+                            Manners have gone to pop,<br><br>
+                            
+                            Sanity is dead,<br><br>
+                            
+                            We need someone to save us,<br><br>
+                            
+                            Love is the only thing that can save us,<br><br>
+                            
+                            Unconditional love for everyone here,<br><br>
+                            
+                            You need to forgive and not blame or hate,<br><br>
+                            
+                            You need to touch the stone that illuminates our consciousness and prove we are people who only love,<br><br>
+                            
+                            If not that, then our souls will die.
+                            </p>                                
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0 text-center">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>Hell</h3>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="text-center">
+                            Hell.<br><br>
+                            
+                            Hell is delusion.<br><br>
+                            
+                            There is no need for someone to create their own hell because someone will gladly make it for you.<br><br>
+                            
+                            They will not see you and let you go.<br><br>
+                            
+                            They will conceive and conspire at your life and draw up plans with hot-crossed paws,<br><br>
+                            
+                            They will see you in their ugliness.<br><br>
+                            
+                            They will hurt a small cat or a baby.<br><br>
+                            
+                            Their relent is disgusting.<br><br>
+                            
+                            I have been to the real hell and cried.<br><br>
+                            
+                            I have been to my own hell and died.<br><br>
+                            
+                            But I will never understand the truth.<br><br>
+                            
+                            What are you.<br><br>
+                            
+                            What is your point.<br><br>
+                            
+                            Where is your distinction.<br><br>
+                            
+                            You fight with a hate for beauty and kindness.<br><br>
+                            
+                            I sometimes think you are insane forever.<br><br>
+                            
+                            I sometimes think you are screaming inside.<br><br>
+                            
+                            I sometimes think you have no bottom.<br><br>
+                            
+                            I know that one day you will be free.
+                            </p>                                
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <h3>Waste</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            Hate in the eyes of spirits,<br><br>
+                            
+                            Tormented and tormenting,<br><br>
+                            
+                            Leaving nothing behind in their waste,<br><br>
+                            
+                            Wasted,<br><br>
+                            
+                            Wasted lives in the candle of a dancer you won’t touch,<br><br>
+                            
+                            She sways and is interrupted by the bland blue light mystery of it all,<br><br>
+                            
+                            I am in Dakota and suffering at your mirth,<br><br>
+                            
+                            The tired eyes of the dragon,<br><br>
+                            
+                            The snake that bleeds from its neck is asking you hard,<br><br>
+                            
+                            The birth of the fool,<br><br>
+                            
+                            The diet of the of the unsustainable,<br><br>
+                            
+                            The sacred evening,<br><br>
+                            
+                            The lost skittle,<br><br>
+                            
+                            The bended evening,<br><br>
+                            
+                            Where all who love go to succumb.
+                            </p>                                                
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          <h3>Two Steps</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            The patient is patient for he knows not when he will leave,<br><br>
+                            
+                            Somewhere after five years he is betrothed to be in the same room forever,<br><br>
+                            
+                            No hope,<br><br>
+                            
+                            No love.<br><br>
+                            
+                            The room looks the same as it always did,<br><br>
+                            
+                            Plastic mattress,<br><br>
+                            
+                            Over-inviting staff,<br><br>
+                            
+                            Board games to play,<br><br>
+                            
+                            I hear them doing it all the fucking time.<br><br>
+                            
+                            The tether,<br><br>
+                            
+                            Dinner time,<br><br>
+                            
+                            ‘Meds’ time,<br><br>
+                            
+                            Sleep time,<br><br>
+                            
+                            How could they do this to me?<br><br>
+                            
+                            I lost my thirties to this.<br><br>
+                            
+                            Sat alone.<br><br>
+                            
+                            Being patient.<br><br>
+                            
+                            Waiting for my final day in the care home.<br><br>
+                            
+                            The lines that draw us from pain are real.<br><br>
+                            
+                            If we lie we two step back.<br><br>
+                            
+                            When we love we go three steps forward.<br><br>
+                            
+                            Where are you going?
+                            </p>
+                                                          
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          <h3>To the Top or Stop</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            The cry of the crowd,<br><br>
+                            
+                            The death that we have become,<br><br>
+                            
+                            The money drawing a picture of those who have it,<br><br>
+                            
+                            The tears of hunger,<br><br>
+                            
+                            The enrapture of a saved person,<br><br>
+                            
+                            The distinction between a person,<br><br>
+                            
+                            The myriad of juxtaposition,<br><br>
+                            
+                            The overlay of evil on burnt sunsets in hospital walls,<br><br>
+                            
+                            The terror of the drip of our inaccurate torments,<br><br>
+                            
+                            Poison hearts on every side,<br><br>
+                            
+                            I always say ‘to the top or stop,’<br><br>
+                            
+                            I am suicidal.<br><br>
+                            
+                            I am alone.<br><br>
+                            
+                            And I hate it.
+                            </p>
+                                              
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          <h3>Think</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            The peace between the lantern and the spring is a rule that no one can shake,<br><br>
+                            
+                            Like the humour of the dying bark which rose from the reaping clover,<br><br>
+                            
+                            Let me know you like the sun and you will be just as constant and giving,<br><br>
+                            
+                            Don’t doubt yourself,<br><br>
+                            
+                            You may have given more than you think,<br><br>
+                            
+                            You may not be evil like the voices in your head are telling you,<br><br>
+                            
+                            You may be the bored and untouchable;<br><br>
+                            
+                            A purchase of yourself in the long gap of ungiving and unthinking,<br><br>
+                            
+                            You could be on the world of great,<br><br>
+                            
+                            Cut off your fringe and LOOK AT YOU!<br><br>
+                            
+                            Who are you and what are you?<br><br>
+                            
+                            Why are you here?<br><br>
+                            
+                            What do you need to do with your life?<br><br>
+                            
+                            Do not ask.
+                            </p>                                   
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          <h3>The Fall</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            A full start,<br><br>
+                            
+                            A wreckage in the mind,<br><br>
+                            
+                            A falling hammer,<br><br>
+                            
+                            A destroyed life,<br><br>
+                            
+                            A screaming night,<br><br>
+                            
+                            Lost,<br><br>
+                            
+                            No family,<br><br>
+                            
+                            Anything but the truth,<br><br>
+                            
+                            The evil of a demon,<br><br>
+                            
+                            His hand touching you essence in a maze of old type.
+                            </p>                                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingNine">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                          <h3>Sad</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            Why does the sky cry?<br><br>
+                            
+                            Why does love never die?<br><br>
+                            
+                            Why do people judge?<br><br>
+                            
+                            And why do they do as they’re told?<br><br>
+                            
+                            Why am I alone most times?<br><br>
+                            
+                            Why do people say they like being alone?<br><br>
+                            
+                            Why do people try not to forgive?<br><br>
+                            
+                            Why do slaves work?<br><br>
+                            
+                            Why am I alone all the time?<br><br>
+                            
+                            Why do people not look at the sky?<br><br>
+                            
+                            Smokey night.<br><br>
+                            
+                            As the sun sets at 4.15pm winter gathers its pyjamas and rolls behind the Earth for another day,<br><br>
+                            
+                            The tipping point is here.<br><br>
+                            
+                            Fly tipping.<br><br>
+                            
+                            On our own front lawn.<br><br>
+                            
+                            This is a sad place.
+                            </p>                                                         
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTen">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                          <h3>Retreat</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            Retreat,<br><br>
+                            
+                            Retreat from that which scares your soul and live alone forever,<br><br>
+                            
+                            Be dictated by your burning red shyness that haunts your day,<br><br>
+                            
+                            Let it keep you in your room, afraid of all that you need,<br><br>
+                            
+                            And suffer. Suffer for every time someone bigger told you were their shit,<br><br>
+                            
+                            What an interesting prognosis, be told that you are ‘ill’ by a ‘doctor’ who doesn’t know you,<br><br>
+                            
+                            Eat at the same time of the others,<br><br>
+                            
+                            Sleep if you can,<br><br>
+                            
+                            I have been sectioned many times. I have also been the smaller child. I have also been the ostracised from people.<br><br>
+                            
+                            And I have learnt this.<br><br>
+                            
+                            Demons are real.
+                            </p>                                                              
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEleven">
+                        <h5 class="mb-0 text-center">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                          <h3>Police</h3>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p class="text-center">
+                            The river runs clear,<br><br>
+                            
+                            The frost thaws on a blanket of secrets,<br><br>
+                            
+                            Nights of passion echo through the pastures,<br><br>
+                            
+                            And the people claim that they claim what they claim when they claim what they claimed when they claimed what they claim when they claim what they claim when they claim what they claim when they claim what they claim when they claim what they ......... adadada,<br><br>
+                            
+                            You cannot own a person or an object these are just here,<br><br>
+                            
+                            And the government and police proport it,<br><br>
+                            
+                            They will take you to jail for taking something that can never be owned,<br><br>
+                            
+                            The police are evil,<br><br>
+                            
+                            They will lock you in a room for years for walking on said; owned land!<br><br>
+                            
+                            And people say they keep us safe,<br><br>
+                            
+                            These people have all the rage and evil of our beautiful life,<br><br>
+                            
+                            And they have been to told that they have authority of the common person,<br><br>
+                            
+                            They are not here to help; like any power they are here to divide us.
+                            </p>
+                                                                                    
+                      </div>
+                    </div>
+                  </div>
+            </div>  
+          </div>
+   
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-heading style-2">
-                        <p>Poetry</p>
-                        <h2>Everything</h2>
+                    <div id="book-text" class="section-heading style-2">
+                        <h2>Excerpts from the book 'Text'</h2>
                     </div>
-                </div>
-            </div>
-            <div class="row" style="display: contents">
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0 text-center">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <h3>Life Alone</h3>
-                          </button>
-                        </h5>
-                      </div>
-                  
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p class="text-center">
-                                If you are on the way to being great you will be hated,<br><br>
-                                
-                                But when you are there they will call you the king of love,<br><br>
-                                
-                                When you are sad you will not find love,<br><br>
-                                
-                                And when you succeed they will tell you they always knew,<br><br>
-                                
-                                It’s dark as fuck,<br><br>
-                                
-                                If you are learning you will be hated or lied to,<br><br>
-                                
-                                Which is worse?<br><br>
-                                
-                                They sing when you’re winning.<br><br>
-                                
-                                They section you if you fall.<br><br>
-                                
-                                Nobody loves an artist.
-                                </p>
 
-                            </div>
-                      </div>
+                    <img src="img/poetry/book-text/gavin-with-red-skies.jpeg" alt="">
+
+                    
+                    <div class="accordion" id="accordion-book-text">
+                      <div class="card">
+                        <div class="card-header" id="headingOneText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneText" aria-expanded="true" aria-controls="collapseOneText">
+                              <h3>Foreword</h3>
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseOneText" class="collapse" aria-labelledby="headingOneText" data-parent="#accordion-book-text">
+                          <div class="card-body">
+                             <p class="text-center">
+                              You can’t do it until you are there,<br><br>
+
+                              Trying won’t get you to do it,<br><br>
+
+                              Wanting won’t get you to do either,<br><br>
+
+                              Only being healed by God and through the hard work you do yourself is anything possible,<br><br>
+
+                              Only with these two things can you be free,<br><br>
+
+                              If we all do it, we will all be free.<br><br>
+
+                              When I think of everything everyone has gone through it hurts,<br><br>
+
+                              Can you imagine what God has gone through?<br><br>
+
+                              He loves us all and knows everything we have all been through.<br><br>
+
+                              Can you imagine that pain?<br><br>
+
+                              Stay close to the great one.<br><br>
+
+                              Love him right.<br><br>
+
+                              And don’t let your pain mask the truth.<br><br>
+
+                              We all love each other.<br><br>
+
+                              Let’s do what we can for the people of life from the humble buttercup to the one put us here.<br><br>
+
+                              Don’t put a limit on your love.<br><br>
+
+                              We are being ourselves when we love and don’t leave anyone out.<br><br>
+
+                              Love is the truth.<br><br>
+
+                              Let it be your mantra for life.<br><br>
+
+                              There are no lies in love.<br><br>
+
+                              Lies only cause pain.<br><br>
+
+                              We need to stop judging, stop picking sides, stop blaming others and learn to love as much as we can if we ever have a chance of living a life without pain.<br><br>
+
+                              I love you,<br><br>
+
+                              Gavin.
+                          </p>
+
+
+                              </div>
+                        </div>
+                    </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwoText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoText" aria-expanded="true" aria-controls="collapseTwoText">
+                              <h3>Cubes</h3>
+                            </button>
+                          </h5>
+                        </div>
+                    
+                        <div id="collapseTwoText" class="collapse" aria-labelledby="headingTwoText" data-parent="#accordion-book-text">
+                          <div class="card-body">
+                            <p class="text-center">
+                              I sit on this train in hopeful hope that one day this life will walk freely together soon,<br><br>
+
+                              I am not on anyone’s side, I do not judge people and I do ostracise anyone because I know that the evil acts are done here are done by demons who usurp peoples bodies and do the worse things that one can dream. Worse.<br><br>
+
+                              So I sit here as the countryside whizzes past thinking, try to draw a plan of someday there being a free life,<br><br>
+
+                              It is beautiful,<br><br>
+
+                              The countryside around which I was raised. Bittersweet as I grow older.<br><br>
+
+                              The cornered off fields to control the animals.<br><br>
+
+                              The big farms.<br><br>
+
+                              I hope this poem finds you well.<br><br>
+
+                              And I hope that your train finds its destination.
+                          </p>
+
+
+                              </div>
+                        </div>
                     </div>
                     <div class="card">
-                      <div class="card-header" id="headingTwo">
+                      <div class="card-header" id="headingThreeText">
                         <h5 class="mb-0 text-center">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <h3>Lies</h3>
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThreeText" aria-expanded="false" aria-controls="collapseThreeText">
+                            <h3>Control</h3>
                           </button>
                         </h5>
                       </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div id="collapseThreeText" class="collapse" aria-labelledby="headingThreeText" data-parent="#accordion-book-text">
                         <div class="card-body">
-                            <p class="text-center">
-                                It is desperate,<br><br>
-                                
-                                Everybody just wanting to be left alone with their vice,<br><br>
-                                
-                                We all want a bullet in our fucking heads,<br><br>
-                                
-                                Nice overtures are not enough anymore,<br><br>
-                                
-                                Manners have gone to pop,<br><br>
-                                
-                                Sanity is dead,<br><br>
-                                
-                                We need someone to save us,<br><br>
-                                
-                                Love is the only thing that can save us,<br><br>
-                                
-                                Unconditional love for everyone here,<br><br>
-                                
-                                You need to forgive and not blame or hate,<br><br>
-                                
-                                You need to touch the stone that illuminates our consciousness and prove we are people who only love,<br><br>
-                                
-                                If not that, then our souls will die.
-                                </p>                                
+                           <p class="text-center">
+                            Evil to the masses,<br><br>
+
+                            The body becomes a mattress,<br><br>
+
+                            Hale drowns the feathers of the coup,<br><br>
+
+                            They call us by our classes,<br><br>
+
+                            The singer gladly thrashes ,<br><br>
+
+                            His throat becomes the spine of a lute,<br><br>
+
+                            And he who threw all conjecture,<br><br>
+
+                            In the lies of his lecture,<br><br>
+
+                            Made a scum and a vomit diatribe of the truth,<br><br>
+
+                            One day I hope he finds it,<br><br>
+
+                            ‘stead of things that can’t define it,<br><br>
+
+                            I pray one day you’ll find it inside of you.
+                            </p>                            
                         </div>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0 text-center">
-                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <h3>Hell</h3>
+                        <div class="card-header" id="headingFourText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseFourText"
+                              aria-expanded="false"
+                              aria-controls="collapseFourText">
+                              <h3>Decisions</h3>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseFourText" class="collapse"
+                          aria-labelledby="headingFourText"
+                          data-parent="#accordion-book-text">
+                          <div class="card-body">
+                            <p class="text-center">
+                                The page was never intimidating to me,<br><br>
+
+                                The idea of creating was never a chore or an impossibility for me,<br><br>
+
+                                It was way of escaping the pain of being alone,<br><br>
+
+                                Connecting with God,<br><br>
+
+                                Consoling the self,<br><br>
+
+                                Being myself for a moment,<br><br>
+
+                                To me poetry is a way writing the truth about my plight,<br><br>
+
+                                It has kept me sane.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingFiveText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseFiveText"
+                              aria-expanded="false"
+                              aria-controls="collapseFiveText">
+                              <h3>Everyday Life</h3>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseFiveText" class="collapse"
+                          aria-labelledby="headingFiveText"
+                          data-parent="#accordion-book-text">
+                          <div class="card-body">
+                            <p class="text-center">
+                                Everyday Life<br><br>
+
+                                Oh the killing time as one hand reaches across the clock past another,<br><br>
+
+                                Like all bad wars there are two sides,<br><br>
+
+                                Somebody speaking for another?<br><br>
+
+                                Your scars are across your face,<br><br>
+
+                                You are dying.<br><br>
+
+                                And I can see it.<br><br>
+
+                                We love each other but we are beautiful moons apart.<br><br>
+
+                                Aren’t they beautiful?<br><br>
+
+                                Poor person.<br><br>
+
+                                Poor person.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingSixText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseSixText"
+                              aria-expanded="false"
+                              aria-controls="collapseSixText">
+                              <h3>Fizzy Muscles</h3>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseSixText" class="collapse"
+                          aria-labelledby="headingSixText"
+                          data-parent="#accordion-book-text">
+                          <div class="card-body">
+                            <p class="text-center">
+                                Fizzy Muscles<br><br>
+
+                                I haven’t kissed a woman’s lips in fifteen years,<br><br>
+
+                                I haven’t smelt a woman’s hair in fifteen years,<br><br>
+
+                                I haven’t seen breasts,<br><br>
+
+                                I haven’t seen the magic of legs and haven’t looked into a woman’s eyes in so long I am void,<br><br>
+
+                                My heart hurts,<br><br>
+
+                                I have gone without,<br><br>
+
+                                Touched skin,<br><br>
+
+                                I hate my pain.<br><br>
+
+                                I can’t keep it secret.<br><br>
+
+                                All I have is it to crush me.<br><br>
+
+                                My blood may as well be black.<br><br>
+
+                                My soul is crying constantly.<br><br>
+
+                                My heart is in a little plastic box.<br><br>
+
+                                And I am done.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingSevenText">
+                          <h5 class="mb-0 text-center">
+                          <button class="btn btn-link collapsed" data-toggle="collapse"
+                            data-target="#collapseSevenText"
+                            aria-controls="collapseSevenText">
+                            <h3>I am Done</h3>
                           </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p class="text-center">
-                                Hell.<br><br>
-                                
-                                Hell is delusion.<br><br>
-                                
-                                There is no need for someone to create their own hell because someone will gladly make it for you.<br><br>
-                                
-                                They will not see you and let you go.<br><br>
-                                
-                                They will conceive and conspire at your life and draw up plans with hot-crossed paws,<br><br>
-                                
-                                They will see you in their ugliness.<br><br>
-                                
-                                They will hurt a small cat or a baby.<br><br>
-                                
-                                Their relent is disgusting.<br><br>
-                                
-                                I have been to the real hell and cried.<br><br>
-                                
-                                I have been to my own hell and died.<br><br>
-                                
-                                But I will never understand the truth.<br><br>
-                                
-                                What are you.<br><br>
-                                
-                                What is your point.<br><br>
-                                
-                                Where is your distinction.<br><br>
-                                
-                                You fight with a hate for beauty and kindness.<br><br>
-                                
-                                I sometimes think you are insane forever.<br><br>
-                                
-                                I sometimes think you are screaming inside.<br><br>
-                                
-                                I sometimes think you have no bottom.<br><br>
-                                
-                                I know that one day you will be free.
-                                </p>                                
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              <h3>Waste</h3>
-                            </button>
                           </h5>
                         </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div id="collapseSevenText" class="collapse"
+                          aria-labelledby="headingSevenText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
                             <p class="text-center">
-                                Hate in the eyes of spirits,<br><br>
-                                
-                                Tormented and tormenting,<br><br>
-                                
-                                Leaving nothing behind in their waste,<br><br>
-                                
-                                Wasted,<br><br>
-                                
-                                Wasted lives in the candle of a dancer you won’t touch,<br><br>
-                                
-                                She sways and is interrupted by the bland blue light mystery of it all,<br><br>
-                                
-                                I am in Dakota and suffering at your mirth,<br><br>
-                                
-                                The tired eyes of the dragon,<br><br>
-                                
-                                The snake that bleeds from its neck is asking you hard,<br><br>
-                                
-                                The birth of the fool,<br><br>
-                                
-                                The diet of the of the unsustainable,<br><br>
-                                
-                                The sacred evening,<br><br>
-                                
-                                The lost skittle,<br><br>
-                                
-                                The bended evening,<br><br>
-                                
-                                Where all who love go to succumb.
-                                </p>                                                
+                                I Am Done<br><br>
+
+                                Thankless,<br><br>
+
+                                The way of life,<br><br>
+
+                                Everybody dying,<br><br>
+
+                                Why am I doing this?<br><br>
+
+                                I am at the bottom peg,<br><br>
+
+                                I want to die.<br><br>
+
+                                It’s not a joke anymore,<br><br>
+
+                                Pain all around me,<br><br>
+
+                                I can’t do this anymore,<br><br>
+
+                                Nobody would even hear me do it,<br><br>
+
+                                They would go on spinning,<br><br>
+
+                                And the demons would go on sinning.
+                            </p>
                           </div>
                         </div>
                       </div>
-                      
+
+                      <!-- 8 -->
                       <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              <h3>Two Steps</h3>
-                            </button>
+                        <div class="card-header" id="headingEightText">
+                          <h5 class="mb-0 text-center">
+                          <button class="btn btn-link collapsed" data-toggle="collapse"
+                            data-target="#collapseEightText"
+                            aria-controls="collapseEightText">
+                            <h3>I Really Have Nothing Left</h3>
+                          </button>
                           </h5>
                         </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                        <div id="collapseEightText" class="collapse"
+                          aria-labelledby="headingEightText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
                             <p class="text-center">
-                                The patient is patient for he knows not when he will leave,<br><br>
-                                
-                                Somewhere after five years he is betrothed to be in the same room forever,<br><br>
-                                
-                                No hope,<br><br>
-                                
-                                No love.<br><br>
-                                
-                                The room looks the same as it always did,<br><br>
-                                
-                                Plastic mattress,<br><br>
-                                
-                                Over-inviting staff,<br><br>
-                                
-                                Board games to play,<br><br>
-                                
-                                I hear them doing it all the fucking time.<br><br>
-                                
-                                The tether,<br><br>
-                                
-                                Dinner time,<br><br>
-                                
-                                ‘Meds’ time,<br><br>
-                                
-                                Sleep time,<br><br>
-                                
-                                How could they do this to me?<br><br>
-                                
-                                I lost my thirties to this.<br><br>
-                                
-                                Sat alone.<br><br>
-                                
-                                Being patient.<br><br>
-                                
-                                Waiting for my final day in the care home.<br><br>
-                                
-                                The lines that draw us from pain are real.<br><br>
-                                
-                                If we lie we two step back.<br><br>
-                                
-                                When we love we go three steps forward.<br><br>
-                                
-                                Where are you going?
-                                </p>
-                                                             
+                                I Really Have Nothing Left<br><br>
+
+                                I know you feel it too,<br><br>
+
+                                The want for an end,<br><br>
+
+                                I feel sort of gratified,<br><br>
+
+                                Like I am leaving behind all my problems,<br><br>
+
+                                I also feel like very few will miss me,<br><br>
+
+                                Like I am riding the big t-rex out of this life and into the next,<br><br>
+
+                                Out of this life and into the next,<br><br>
+
+                                Yes.<br><br>
+
+                                That’s how it feels.<br><br>
+
+                                I will leave nothing behind.
+                            </p>
+                          
                           </div>
                         </div>
                       </div>
-                      
+
+                      <!-- 9 -->
                       <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                              <h3>To the Top or Stop</h3>
-                            </button>
+                        <div class="card-header" id="headingNineText">
+                          <h5 class="mb-0 text-center">
+                          <button class="btn btn-link collapsed" data-toggle="collapse"
+                            data-target="#collapseNineText"
+                            aria-controls="collapseNineText">
+                            <h3>Kaleidoscope</h3>
+                          </button>
                           </h5>
                         </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div id="collapseNineText" class="collapse"
+                          aria-labelledby="headingNineText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
                             <p class="text-center">
-                                The cry of the crowd,<br><br>
-                                
-                                The death that we have become,<br><br>
-                                
-                                The money drawing a picture of those who have it,<br><br>
-                                
-                                The tears of hunger,<br><br>
-                                
-                                The enrapture of a saved person,<br><br>
-                                
-                                The distinction between a person,<br><br>
-                                
-                                The myriad of juxtaposition,<br><br>
-                                
-                                The overlay of evil on burnt sunsets in hospital walls,<br><br>
-                                
-                                The terror of the drip of our inaccurate torments,<br><br>
-                                
-                                Poison hearts on every side,<br><br>
-                                
-                                I always say ‘to the top or stop,’<br><br>
-                                
-                                I am suicidal.<br><br>
-                                
-                                I am alone.<br><br>
-                                
-                                And I hate it.
-                                </p>
-                                                 
+                              Kaleidoscope<br><br>
+                              Pain.<br><br>
+                              The enemy of life.<br><br>
+                              The lie.<br><br>
+                              Suicide.<br><br>
+                              Ever closer as the tears dry.<br><br>
+                              The wanting to leave all of this behind.<br><br>
+                              The pain of being alone.<br><br>
+                              I don’t want to mess up my body.<br><br>
+                              I love it.<br><br>
+                              It was made for me by God.<br><br>
+                              I don’t want see any pain.<br><br>
+                              Pain.<br><br>
+                              The only problem.<br><br>
+                              The power it yields.<br><br>
+                              The misery it causes.<br><br>
+                              The want to end one’s life.<br><br>
+                              The curtain.<br><br>
+                              Falling.<br><br>
+                              As you scream for your last.<br><br>
+                              Never was there once a life who should’ve prayed more.<br><br>
+                              Never was there once a time where more could be lost.
+                            </p>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 10 -->
+                      <div class="card">
+                        <div class="card-header" id="headingTenText">
+                          <h5 class="mb-0 text-center">
+                          <button class="btn btn-link collapsed" data-toggle="collapse"
+                            data-target="#collapseTenText"
+                            aria-controls="collapseTenText">
+                            <h3>The Importance of Unity</h3>
+                          </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTenText" class="collapse"
+                          aria-labelledby="headingTenText"
+                          data-parent="#accordion-book-text">
+                          <div class="card-body">
+                            <p class="text-center">
+                              The Importance Of Unity<br><br>
+                              The things I have seen in this life are too graphic, too evil and too painful to ever be broadcast in the news,<br><br>
+                              This earth is a fireball,<br><br>
+                              And everybody is muted to talk,<br><br>
+                              I will not be taken over and I will not be muted,<br><br>
+                              I have been thrown to sharks, I have seen my dear family raped and I have seen the terrifying eyes of anger,<br><br>
+                              We have all been hurt,<br><br>
+                              Many of us have been killed,<br><br>
+                              But to end an evil oppressor we must join each other in unity, equality and love.<br><br>
+                              These bonds cannot be broken.
+                            </p>
+
                           </div>
                         </div>
                       </div>
                       <div class="card">
-                        <div class="card-header" id="headingSeven">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                              <h3>Think</h3>
+                        <div class="card-header" id="headingElevenText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseElevenText"
+                              aria-expanded="false"
+                              aria-controls="collapseElevenText">
+                              <h3>The Plight of the Blinding</h3>
                             </button>
                           </h5>
                         </div>
-                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+
+                        <div id="collapseElevenText" class="collapse"
+                          aria-labelledby="headingElevenText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
                             <p class="text-center">
-                                The peace between the lantern and the spring is a rule that no one can shake,<br><br>
-                                
-                                Like the humour of the dying bark which rose from the reaping clover,<br><br>
-                                
-                                Let me know you like the sun and you will be just as constant and giving,<br><br>
-                                
-                                Don’t doubt yourself,<br><br>
-                                
-                                You may have given more than you think,<br><br>
-                                
-                                You may not be evil like the voices in your head are telling you,<br><br>
-                                
-                                You may be the bored and untouchable;<br><br>
-                                
-                                A purchase of yourself in the long gap of ungiving and unthinking,<br><br>
-                                
-                                You could be on the world of great,<br><br>
-                                
-                                Cut off your fringe and LOOK AT YOU!<br><br>
-                                
-                                Who are you and what are you?<br><br>
-                                
-                                Why are you here?<br><br>
-                                
-                                What do you need to do with your life?<br><br>
-                                
-                                Do not ask.
-                                </p>                                   
+                              The Plight Of The Blinding<br><br>
+                              Devil be hungry,<br><br>
+                              Be hungry for what you want and hungry because you will never being filled,<br><br>
+                              Hungry for the insanity of others,<br><br>
+                              Be hungry for the ruin you fear,<br><br>
+                              You are confused and you show me your pin with a running glee,<br><br>
+                              You are lost and feed off others who are lost too,<br><br>
+                              In the eyes of hate all I see is blindness.
+                            </p>
                           </div>
                         </div>
                       </div>
+
                       <div class="card">
-                        <div class="card-header" id="headingEight">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                              <h3>The Fall</h3>
+                        <div class="card-header" id="headingTwelveText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseTwelveText"
+                              aria-expanded="false"
+                              aria-controls="collapseTwelveText">
+                              <h3>The Taste of the Sun</h3>
                             </button>
                           </h5>
                         </div>
-                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+
+                        <div id="collapseTwelveText" class="collapse"
+                          aria-labelledby="headingTwelveText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
                             <p class="text-center">
-                                A full start,<br><br>
-                                
-                                A wreckage in the mind,<br><br>
-                                
-                                A falling hammer,<br><br>
-                                
-                                A destroyed life,<br><br>
-                                
-                                A screaming night,<br><br>
-                                
-                                Lost,<br><br>
-                                
-                                No family,<br><br>
-                                
-                                Anything but the truth,<br><br>
-                                
-                                The evil of a demon,<br><br>
-                                
-                                His hand touching you essence in a maze of old type.
-                                </p>                                        
+                              The Plight Of The Blinding<br><br>
+                              Devil be hungry,<br><br>
+                              Be hungry for what you want and hungry because you will never being filled,<br><br>
+                              Hungry for the insanity of others,<br><br>
+                              Be hungry for the ruin you fear,<br><br>
+                              You are confused and you show me your pin with a running glee,<br><br>
+                              You are lost and feed off others who are lost too,<br><br>
+                              In the eyes of hate all I see is blindness.
+                            </p>
                           </div>
                         </div>
                       </div>
+
                       <div class="card">
-                        <div class="card-header" id="headingNine">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                              <h3>Sad</h3>
+                        <div class="card-header" id="headingThirteenText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseThirteenText"
+                              aria-expanded="false"
+                              aria-controls="collapseThirteenText">
+                              <h3>The Teller Fortune</h3>
                             </button>
                           </h5>
                         </div>
-                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+
+                        <div id="collapseThirteenText" class="collapse"
+                          aria-labelledby="headingThirteenText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
+
                             <p class="text-center">
-                                Why does the sky cry?<br><br>
-                                
-                                Why does love never die?<br><br>
-                                
-                                Why do people judge?<br><br>
-                                
-                                And why do they do as they’re told?<br><br>
-                                
-                                Why am I alone most times?<br><br>
-                                
-                                Why do people say they like being alone?<br><br>
-                                
-                                Why do people try not to forgive?<br><br>
-                                
-                                Why do slaves work?<br><br>
-                                
-                                Why am I alone all the time?<br><br>
-                                
-                                Why do people not look at the sky?<br><br>
-                                
-                                Smokey night.<br><br>
-                                
-                                As the sun sets at 4.15pm winter gathers its pyjamas and rolls behind the Earth for another day,<br><br>
-                                
-                                The tipping point is here.<br><br>
-                                
-                                Fly tipping.<br><br>
-                                
-                                On our own front lawn.<br><br>
-                                
-                                This is a sad place.
-                                </p>                                                         
+                              The Teller Fortune<br><br>
+                              In my head I see an elephant with a yellow, pink and black nose,<br><br>
+                              His beard is made of lace and his arms only cause harm,<br><br>
+                              The breath he breathes is like an ice storm and his belly is full of nothing,<br><br>
+                              The gap by his big toe speaks nontrinsic notions about hummingbird scabs and the evil of the dying dog in the Baltimore hotel,<br><br>
+                              Pierce my bloated stomach and watch me die with my arms around this beast,<br><br>
+                              Cut my hand you will see me crying about being alone,<br><br>
+                              I don’t know how to beat the blues,<br><br>
+                              I have been lied to so many times I have no care to go on,<br><br>
+                              Nobody knows our troubles friend.<br><br>
+                              Ours are too many, too much and the knife is deep in my heart.<br><br>
+                              Patience and work, that is how you rebuild Rome.
+                            </p>
+
                           </div>
                         </div>
                       </div>
+
                       <div class="card">
-                        <div class="card-header" id="headingTen">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                              <h3>Retreat</h3>
+                        <div class="card-header" id="headingFourteenText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseFourteenText"
+                              aria-expanded="false"
+                              aria-controls="collapseFourteenText">
+                              <h3>Twilight</h3>
                             </button>
                           </h5>
                         </div>
-                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+
+                        <div id="collapseFourteenText" class="collapse"
+                          aria-labelledby="headingFourteenText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
+
                             <p class="text-center">
-                                Retreat,<br><br>
-                                
-                                Retreat from that which scares your soul and live alone forever,<br><br>
-                                
-                                Be dictated by your burning red shyness that haunts your day,<br><br>
-                                
-                                Let it keep you in your room, afraid of all that you need,<br><br>
-                                
-                                And suffer. Suffer for every time someone bigger told you were their shit,<br><br>
-                                
-                                What an interesting prognosis, be told that you are ‘ill’ by a ‘doctor’ who doesn’t know you,<br><br>
-                                
-                                Eat at the same time of the others,<br><br>
-                                
-                                Sleep if you can,<br><br>
-                                
-                                I have been sectioned many times. I have also been the smaller child. I have also been the ostracised from people.<br><br>
-                                
-                                And I have learnt this.<br><br>
-                                
-                                Demons are real.
-                                </p>                                                              
+                              The Teller Fortune<br><br>
+                              In my head I see an elephant with a yellow, pink and black nose,<br><br>
+                              His beard is made of lace and his arms only cause harm,<br><br>
+                              The breath he breathes is like an ice storm and his belly is full of nothing,<br><br>
+                              The gap by his big toe speaks nontrinsic notions about hummingbird scabs and the evil of the dying dog in the Baltimore hotel,<br><br>
+                              Pierce my bloated stomach and watch me die with my arms around this beast,<br><br>
+                              Cut my hand you will see me crying about being alone,<br><br>
+                              I don’t know how to beat the blues,<br><br>
+                              I have been lied to so many times I have no care to go on,<br><br>
+                              Nobody knows our troubles friend.<br><br>
+                              Ours are too many, too much and the knife is deep in my heart.<br><br>
+                              Patience and work, that is how you rebuild Rome.
+                            </p>
+
+
                           </div>
                         </div>
                       </div>
+
                       <div class="card">
-                        <div class="card-header" id="headingEleven">
-                            <h5 class="mb-0 text-center">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                              <h3>Police</h3>
+                        <div class="card-header" id="headingFifteenText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseFifteenText"
+                              aria-expanded="false"
+                              aria-controls="collapseFifteenText">
+                              <h3>White Building</h3>
                             </button>
                           </h5>
                         </div>
-                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+
+                        <div id="collapseFifteenText" class="collapse"
+                          aria-labelledby="headingFifteenText"
+                          data-parent="#accordion-book-text">
                           <div class="card-body">
+
                             <p class="text-center">
-                                The river runs clear,<br><br>
-                                
-                                The frost thaws on a blanket of secrets,<br><br>
-                                
-                                Nights of passion echo through the pastures,<br><br>
-                                
-                                And the people claim that they claim what they claim when they claim what they claimed when they claimed what they claim when they claim what they claim when they claim what they claim when they claim what they claim when they claim what they ......... adadada,<br><br>
-                                
-                                You cannot own a person or an object these are just here,<br><br>
-                                
-                                And the government and police proport it,<br><br>
-                                
-                                They will take you to jail for taking something that can never be owned,<br><br>
-                                
-                                The police are evil,<br><br>
-                                
-                                They will lock you in a room for years for walking on said; owned land!<br><br>
-                                
-                                And people say they keep us safe,<br><br>
-                                
-                                These people have all the rage and evil of our beautiful life,<br><br>
-                                
-                                And they have been to told that they have authority of the common person,<br><br>
-                                
-                                They are not here to help; like any power they are here to divide us.
-                                </p>
-                                                                                        
+                              White Buiding<br><br>
+                              Terrorised life,<br><br>
+                              Not an hour of peace,<br><br>
+                              The people I love, the people I would give my life for,<br><br>
+                              Broken in pain,<br><br>
+                              I see the suffering on your face,<br><br>
+                              This is hell for you isn’t it?<br><br>
+                              You want to end don’t you?<br><br>
+                              I am so sorry.<br><br>
+                              Just know I am doing everything to end yours and everyone else’s pain.<br><br>
+                              I am gaining deep ground and you will free soon.<br><br>
+                              Until then I will pray for you.<br><br>
+                              You are a great life and you are loved and one day you will be happy and fulfilled in the deepest parts of you,<br><br>
+                              I don’t want you to be alone and suffer,<br><br>
+                              Life is a beautiful place and you deserve to be free to learn about it and discover and chase your dreams.<br><br>
+                              If you don’t chase them you will never catch them.
+                            </p>
+
+
                           </div>
                         </div>
                       </div>
-                </div>    
-            </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingSixteenText">
+                          <h5 class="mb-0 text-center">
+                            <button class="btn btn-link collapsed" type="button"
+                              data-toggle="collapse"
+                              data-target="#collapseSixteenText"
+                              aria-expanded="false"
+                              aria-controls="collapseSixteenText">
+                              <h3>True Lonliness</h3>
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseSixteenText" class="collapse"
+                          aria-labelledby="headingSixteenText"
+                          data-parent="#accordion-book-text">
+                          <div class="card-body">
+                            <p class="text-center">
+                              Brash tauntings from the calling razor yellow,<br><br>
+                              She is always there,<br><br>
+                              No peace,<br><br>
+                              She never leaves,<br><br>
+                              And I live here alone,<br><br>
+                              It is so lonely here,<br><br>
+                              The only one,<br><br>
+                              Seas of dying face.<br><br>
+                              I love them all.<br><br>
+                              Regardless of what they say.<br><br>
+                              Regardless of everything.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                </div>
         </div>
     </section>
     <!-- ##### Miscellaneous Area End ##### -->
 
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading white wow fadeInUp" data-wow-delay="100ms">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
-                    </div>
-                </div>
-            </div>
+  <footer class="footer-area">
+    <div class="container">
 
-            <div class="row">
-                <div class="col-12">
-                    <!-- Contact Form Area -->
-                    <div class="contact-form-area">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="100ms">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="200ms">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="300ms">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group wow fadeInUp" data-wow-delay="400ms">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <a href="#">
+                    <img src="img/core-img/logo.png"
+                         style="max-width: 200px; display: inline-block;"
+                         alt="Gavin Lake Music">
+                </a>
             </div>
         </div>
-    </section>
-    <!-- ##### Contact Area End ##### -->
 
-    <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row d-flex flex-wrap align-items-center">
-                <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.techowl.co.uk" target="_blank">Will Mason @ TechOwl</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </div>
-
-                <div class="col-12 col-md-6">
-                    <div class="footer-nav">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Albums</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <nav class="footer-nav">
+                    <ul class="list-inline mb-0" style="justify-content: center;">
+                        <li class="list-inline-item"><a href="#" class="text-uppercase">About</a></li>
+                        <li class="list-inline-item"><a href="/gavinlakemusic/music.html" class="text-uppercase">Music</a></li>
+                        <!-- <li class="list-inline-item"><a href="/gavinlakemusic/blog.html" class="text-uppercase">News</a></li> -->
+                        <li class="list-inline-item"><a href="/gavinlakemusic/poetry.html" class="text-uppercase">Poetry</a></li>
+                        <li class="list-inline-item"><a href="/gavinlakemusic/art.html" class="text-uppercase">Art</a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="text-uppercase">Community</a></li> -->
+                        <li class="list-inline-item"><a href="#" class="text-uppercase">Contact</a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="text-uppercase">Bookings</a></li> -->
+                    </ul>
+                </nav>
             </div>
         </div>
-    </footer>
-    <!-- ##### Footer Area Start ##### -->
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="copywrite-text mb-0">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | Made with
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    by
+                    <a href="https://www.techowl.co.uk" target="_blank" rel="noopener">
+                        Will Mason
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
@@ -684,6 +1405,62 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
-    </script>
+
+    document.querySelectorAll('.accordion .card-header button').forEach(button => {
+      button.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const targetCollapse = document.querySelector(targetId);
+
+        const animationDuration = 350;
+        setTimeout(() => {
+          const header = this.closest('.card-header');
+          const headerTop = header.getBoundingClientRect().top + window.scrollY;
+
+          window.scrollTo({
+            top: headerTop - 20,
+            behavior: 'smooth'
+          });
+        }, animationDuration);
+      });
+    });
+
+    
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionButtons = document.querySelectorAll('.accordion .btn-link');
+
+  accordionButtons.forEach(button => {
+    const targetId = button.getAttribute('data-target');
+    const targetCollapse = document.querySelector(targetId);
+
+    button.addEventListener('click', () => {
+      // Wait for collapse animation to finish
+      targetCollapse.addEventListener('shown.bs.collapse', () => {
+        const rect = targetCollapse.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const scrollTop = window.scrollY;
+
+        // Scroll so the card header is at top
+        // but leave extra space for next card
+        const nextCard = targetCollapse.parentElement.nextElementSibling;
+        let offset = 0;
+
+        if (nextCard) {
+          const nextRect = nextCard.getBoundingClientRect();
+          offset = nextRect.height / 2; // show half of next card
+        }
+
+        window.scrollTo({
+          top: scrollTop + rect.top - 20 - offset, // 20px padding
+          behavior: 'smooth'
+        });
+      }, { once: true });
+    });
+  });
+});
+</script>
+
+
 
 </html>

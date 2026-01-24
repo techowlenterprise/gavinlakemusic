@@ -6,15 +6,11 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Title -->
-    <title>Gavin Lake - Music</title>
+    <title>Gavin Lake Music | Acoustic Singer, Songwriter & Artist</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,67 +31,90 @@
 
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
-      <!-- Navbar Area -->
-      <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Navbar Area -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-          <a href="/gavinlakemusic/index.html" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">Home</a>
-          <a href="#" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">About</a>
-          <a href="/gavinlakemusic/music.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Music</a>
-          <a href="/gavinlakemusic/blog.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">News</a>
-          <a href="/gavinlakemusic/poetry.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Poetry</a>
-          <a href="/gavinlakemusic/art.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Art</a>
-          <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Community</a>
-          <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Contact</a>
-          <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Bookings</a>
-        </div>
-        
-        <span style="font-size:40px;cursor:pointer; color: white; padding-left: 20px; display: block;" onclick="openNav()">&#9776;</span>
-        <!-- Nav brand -->
+            <a href="/gavinlakemusic/index.html" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">Home</a>
+            <a href="/gavinlakemusic/about.html" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">About</a>
+            <a href="/gavinlakemusic/music.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Music</a>
+            <!-- <a href="/gavinlakemusic/blog.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">News</a> -->
+            <a href="/gavinlakemusic/poetry.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Poetry</a>
+            <a href="/gavinlakemusic/art.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Art</a>
+            <!-- <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Community</a> -->
+            <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Contact</a>
+            <!-- <a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Bookings</a> -->
+          </div>
+          
+          <span style="font-size:40px;cursor:pointer; color: white; padding-left: 20px; display: block;" onclick="openNav()">&#9776;</span>
+          <!-- Nav brand -->
 
-        
-  </header>
-  <!-- ##### Header Area End ##### -->
+          
+    </header>
+    <!-- ##### Header Area End ##### -->
+<style>
+.social-bar-right {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly transparent */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 
-    <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area">
-        <div class="hero-slides owl-carousel">
-            <!-- Single Hero Slide -->
-            <div class="single-hero-slide d-flex align-items-center justify-content-center">
-                <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/hero-1-gav.jpeg);"></div>
-                <!-- Slide Content -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+.social-bar-right a {
+  font-size: 24px;
+  margin: 8px 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-                            <div class="hero-slides-content text-center">
-                                <a href="index.html" class="nav-brand"><img style="padding-bottom: 20px; max-width: 300px; margin: 0 auto; opacity: 0.8;" src="img/core-img/logo.png" alt=""></a>
+.social-bar-right a:hover {
+  transform: translateX(-6px);
+}
 
-                                <!-- <h6 data-animation="fadeInUp" data-delay="100ms">A Scheme Said to Break One's Fall is a Power to Undo</h6> -->
-                                <h2 data-animation="fadeInUp" data-delay="300ms"><span></span></h2>
-                                <!-- <a data-animation="fadeInUp" data-delay="500ms" href="#" class="btn oneMusic-btn mt-50">Discover <i class="fa fa-angle-double-right"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+/* Brand Colors */
+.facebook { color: #1877F2; }
+.twitter { color: #1DA1F2; }
+.instagram { color: #C13584; }
+.youtube { color: #FF0000; }
+.soundcloud { color: #FF8800; }
+.bandcamp { color: #629AA9; }
+.threads { color: #000000; }
+</style>
 
-           
+<div class="social-bar-right">
+  <a href="https://www.facebook.com" target="_blank" class="facebook" aria-label="Facebook"><i class="fa fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank" class="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com" target="_blank" class="instagram" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com" target="_blank" class="youtube" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+  <a href="https://soundcloud.com" target="_blank" class="soundcloud" aria-label="SoundCloud"><i class="fa fa-soundcloud"></i></a>
+  <a href="https://bandcamp.com" target="_blank" class="bandcamp" aria-label="Bandcamp"><i class="fa fa-bandcamp"></i></a>
+  <a href="https://www.threads.net" target="_blank" class="threads" aria-label="Threads"><i class="fa fa-threads"></i></a>
+</div>
+   <!-- ##### Breadcumb Area Start ##### -->
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/landscape/gav-front-of-wall.jpeg);">
+        <div class="bradcumbContent">
+            <h2>Music</h2>
         </div>
     </section>
-    <!-- ##### Hero Area End ##### -->
+    <!-- ##### Breadcumb Area End ##### -->
+
 
       <!-- ##### Music Area Start ##### -->
       <section class="featured-artist-area section-padding-100 bg-white bg-fixed">
         <div class="container">
             <div class="row align-items-end">
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="featured-artist-thumb">
-                        <img src="img/album-covers/love-is-the-truth.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-md-7 col-lg-8">
+                
+                <div class="col-8 offset-2">
                     <div class="featured-artist-content">
                         <!-- Section Heading -->
                         <div class="section-heading black text-left mb-30">
@@ -119,35 +138,57 @@
     <!-- ##### Latest Music Area End ##### -->
   
 
-  <!-- ##### Footer Area Start ##### -->
-  <footer class="footer-area">
+ <footer class="footer-area">
     <div class="container">
-        <div class="row d-flex flex-wrap align-items-center">
-            <div class="col-12 col-md-6">
-                <a href="#"><img src="img/core-img/logo.png" style="max-width: 200px; display: block;" alt=""></a><br>
-                <p class="copywrite-text"><a href="#">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.techowl.co.uk" target="_blank">Will Mason</a>
-</p>
-            </div>
 
-            <div class="col-12 col-md-6">
-                <div class="footer-nav">
-                    <ul>
-                        <li><a href="#" class="nav-text" style="text-transform: uppercase; margin-bottom: 0;">About</a></li>
-                        <li><a href="/gavinlakemusic/music.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Music</a></li>
-                        <li><a href="/gavinlakemusic/blog.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">News</a></li>
-                        <li><a href="/gavinlakemusic/poetry.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Poetry</a></li>
-                        <li><a href="/gavinlakemusic/art.html" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Art</a></li>
-                        <li><a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Community</a></li>
-                        <li><a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Contact</a></li>
-                        <li><a href="#" style="text-transform: uppercase; letter-spacing: 10px; margin-bottom: 0;">Bookings</a></li>
-                    </ul>
-                </div>
+        <!-- Row 1: Logo -->
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <a href="#">
+                    <img src="img/core-img/logo.png"
+                         style="max-width: 200px; display: inline-block;"
+                         alt="Gavin Lake Music">
+                </a>
             </div>
         </div>
+
+        <!-- Row 2: Navigation -->
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <nav class="footer-nav">
+                    <ul class="list-inline mb-0" style="justify-content: center;">
+                        <li class="list-inline-item"><a href="#" class="text-uppercase">About</a></li>
+                        <li class="list-inline-item"><a href="/gavinlakemusic/music.html" class="text-uppercase">Music</a></li>
+                        <!-- <li class="list-inline-item"><a href="/gavinlakemusic/blog.html" class="text-uppercase">News</a></li> -->
+                        <li class="list-inline-item"><a href="/gavinlakemusic/poetry.html" class="text-uppercase">Poetry</a></li>
+                        <li class="list-inline-item"><a href="/gavinlakemusic/art.html" class="text-uppercase">Art</a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="text-uppercase">Community</a></li> -->
+                        <li class="list-inline-item"><a href="#" class="text-uppercase">Contact</a></li>
+                        <!-- <li class="list-inline-item"><a href="#" class="text-uppercase">Bookings</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Row 3: Copyright -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="copywrite-text mb-0">
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved | Made with
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    by
+                    <a href="https://www.techowl.co.uk" target="_blank" rel="noopener">
+                        Will Mason
+                    </a>
+                </p>
+            </div>
+        </div>
+
     </div>
 </footer>
-<!-- ##### Footer Area Start ##### -->
+<!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
